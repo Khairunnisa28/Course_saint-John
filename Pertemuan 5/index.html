@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      background-color: rgb(255, 2, 112);
+      color: white;
+      padding: 20px 0;
+      margin: 0 0 20px 0;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid rgb(255, 2, 112);
+      margin-top: 15px;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 60%;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+      font-size: 1rem;
+    }
+
+    th {
+      background-color: rgb(255, 2, 112);
+      color: white;
+      text-align: center;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    form {
+      margin: 30px auto;
+      width: 60%;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    h2 {
+      text-align: center;
+      color: rgb(255, 2, 112);
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: rgb(255, 2, 112);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: rgb(200, 0, 90);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar Bootstrap Hitam -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Website</a>
+      <div class="collapse navbar-collapse show">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Biodata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="porto.html">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galery.html">Galery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Biodata</h1>
+  <p style="color: black;">Nida Khairunnisa Kusumawardhani</p>
+  <img src="foto.jpg" alt="foto profil">
+
+  <table>
+    <tr>
+      <th colspan="2">Informasi Pribadi</th>
+    </tr>
+    <tr>
+      <td>Nama Lengkap</td>
+      <td>Nida Khairunnisa Kusumawardhani</td>
+    </tr>
+    <tr>
+      <td>Tanggal Lahir</td>
+      <td>01 Januari 2000</td>
+    </tr>
+    <tr>
+      <td>Alamat</td>
+      <td>Bandung, Jawa Barat</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>nida@example.com</td>
+    </tr>
+    <tr>
+      <td>Hobi</td>
+      <td>Gaming, Coding</td>
+    </tr>
+  </table>
+
+  <!-- Form Update Biodata -->
+  <form>
+    <h2>Update Biodata</h2>
+    
+    <label for="nama">Nama Lengkap</label>
+    <input type="text" id="nama" name="nama" value="Nida Khairunnisa Kusumawardhani" required>
+
+    <label for="tgl">Tanggal Lahir</label>
+    <input type="date" id="tgl" name="tgl" value="2000-01-01" required>
+
+    <label for="alamat">Alamat</label>
+    <textarea id="alamat" name="alamat" rows="3" required>Bandung, Jawa Barat</textarea>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" value="nida@example.com" required>
+
+    <label for="hobi">Hobi</label>
+    <input type="text" id="hobi" name="hobi" value="Gaming, Coding">
+
+    <button type="submit">Simpan Perubahan</button>
+  </form>
+
+</body>
+</html>
